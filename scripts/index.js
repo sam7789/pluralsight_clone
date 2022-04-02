@@ -1,3 +1,6 @@
+
+
+
 $('.slider').slick({
   dots: true,
   infinite: true,
@@ -62,4 +65,5 @@ let colab = document.getElementById("howTheyDoing");
 
 colab.addEventListener("click", () => {
   window.location.href = "colab.html"
-})
+});
+

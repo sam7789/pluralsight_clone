@@ -10,14 +10,14 @@ let navigation = () => {
             <li id="platbtn">Platform <span>&#9662</span></li>
             <li id="prodbtn">Products <span>&#9662</span></li>
             <li id="resobtn">Resourses <span>&#9662</span></li>
-            <li><a href="./for-individuals.html">For Individuals</a></li>
+            <li>For Individuals</li>
           </ul>
         </div>
         <div>
           <div>
             <img id="img" src="https://cdn-icons-png.flaticon.com/128/622/622669.png" alt="">
           </div>
-          <div>
+          <div id="signinid">
             <p id="signinbtn">Sign in <span>&#9662</span></p>
           </div>
           <div>
@@ -26,6 +26,8 @@ let navigation = () => {
         </div>
         `;
 };
+
+
 
 let popuppart = () => {
   return `
@@ -240,7 +242,7 @@ let popuppart = () => {
 
             <div>
               <div>
-                <h4><a href="/signin.html">SIGN IN WITH</a></h4>
+                <h4 id="out">SIGN IN WITH</h4>
               </div>
               <div>
                 <a href="./signin.html">
