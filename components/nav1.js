@@ -237,7 +237,7 @@ let popuppart = () => {
 
                 <div>
                 <div>
-                    <h4><a href="./signin.html">SIGN IN WITH</a></h4>
+                    <h4 id="out">SIGN IN WITH</h4>
                 </div>
                 <div>
                     <a href="./signin.html">
