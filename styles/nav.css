@@ -126,7 +126,7 @@ p {
   box-sizing: border-box;
   border: none;
   color: rgb(255, 255, 255);
-  line-height: 16.5px;
+  line-height: 19.5px;
   text-decoration: none solid rgb(255, 255, 255);
   transition: all 0.8s ease-in-out 0s;
   word-break: break-word;
@@ -165,7 +165,7 @@ p {
   text-decoration: inherit;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px;
-  background-position: -50% 0px;
+  background-position: -40% 0px;
 }
 #coursediv p {
   margin: 10px 10%;
