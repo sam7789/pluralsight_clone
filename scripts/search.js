@@ -20,8 +20,26 @@ async function main(){
         document.getElementById("displaysearch").innerHTML = null;
         return false;
     }
-    displayData(data);
+    let username = localStorage.getItem("username");
+    if(data !== undefined && username !== null){
+        displayData(data);
+    }
+    else{
+        document.getElementById("displaysearch").innerHTML = "";
+        let div = document.createElement('div');
+        div.setAttribute("id","noncourse");
+        div.innerHTML="Sign in First";
+        document.getElementById("displaysearch").append(div);
+    }
+    //displayData(data);
 }
+
+
+// else{
+//     let title1 = document.createElement("p");
+//     title1.textContent="Sign in first";
+//     div.append(title1);
+// }
 
 function displayData(data){
     // console.log(data);
@@ -35,10 +53,13 @@ function displayData(data){
         title.innerText = element.title;
 
         title.onclick = ()=>{
-            localStorage.setItem("course", JSON.stringify(element));
-            location.href = "course.html";
+             localStorage.setItem("course", JSON.stringify(element));
+             location.href = "learning.html";
+           
         }
+       
         div.append(title);
+
     });
     document.getElementById("displaysearch").append(div);
 }

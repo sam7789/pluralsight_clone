@@ -90,7 +90,7 @@ effect();
 console.log("loggedin_name:", loggedin_name);
 
 function signup() {
-  // *************validation********* //
+  // ****validation**** //
 
   let f_name = document.getElementById("first_name").value;
   let f_name_mand = document.getElementById("fname_mand");
@@ -160,7 +160,7 @@ function signup() {
     cpass_mand.setAttribute("style", "display:none");
   }
 
-  // *************validation********* //
+  // ****validation**** //
 
   if (localStorage.getItem("plural_Signup") === null) {
     localStorage.setItem("plural_Signup", JSON.stringify([]));
@@ -413,7 +413,8 @@ async function login(user) {
       alert("wrong email or password");
     } else {
       alert("login successfully");
-      localStorage.setItem("username", JSON.stringify(data.user.firstName));
+      localStorage.setItem("username",(data.user.firstName));
+      localStorage.setItem("user", (data.user));
       window.location.href = "index.html";
     }
 

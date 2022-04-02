@@ -1,557 +1,803 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java</title>
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/nav.css" />
-  </head>
-  <style>
+    <link rel="icon" type="image/png"
+        href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/android-chrome-192x192.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+    }
+  
     #container {
-      width: 100%;
-      height: 2800px;
-      background-color: black;
+        width: 100%;
+        height: 3150px;
+        background-color: #181818;
     }
 
     #textarea {
-      width: 70%;
-      height: 2800px;
-      margin: auto;
+        
+        width: 97%;
+        height: 2800px;
+        margin: auto;
+
     }
 
     #first {
-      display: flex;
+        display: flex;
     }
 
-    #first > div {
-      margin-top: 10px;
-      color: white;
+    #first>div {
+        margin-top: 20px;
+        color: white;
     }
 
     #second {
-      width: 100%;
-      height: 800px;
-      display: flex;
+        
+        width: 100%;
+        height: 800px;
+        display: flex;
     }
 
     #second_one {
-      width: 65%;
-      height: 100%;
+       
+        width: 65%;
+        height: 1350px;
     }
 
     #second_two {
-      width: 35%;
-      height: 100%;
+        width: 26%;
+        height: 950px;
+        margin-top: 30px;
+        margin-left: 60px;
+        background-color: #222222;
+       
     }
 
     #third {
-      width: 100%;
-      height: 1100px;
-      /* background-color: rgb(29,29,29); */
+        width: 100%;
+        height: 1100px;
+        margin-top: 120px;
+        /* background-color: rgb(29,29,29); */
     }
 
     #third_one {
-      height: 70px;
-      padding-top: 60px;
-      color: white;
+        height: 70px;
+        padding-top: 60px;
+        color: white;
+
     }
 
     #third_two {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,410px);
+        grid-gap: 25px;
+    }
+    #auth{
+      color:azure;
     }
 
-    #third_two > div {
-      height: 250px;
+    #third_two>div {
+      
+        height: 250px;
+        margin-left: 50px;
     }
 
-    #th_o {
-      height: 20%;
-      display: flex;
+    .th_o {
+        
+        height: 20%;
+        display: flex;
+        
+       
     }
 
-    #th_oo {
-      width: 15%;
-      height: 100%;
+    .th_oo {
+        width: 15%;
+        height: 100%;
+
     }
 
-    #th_oo > img {
-      width: 100%;
-      height: 100%;
-      border-radius: 30px;
+    .th_oo>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
     }
 
-    #th_ot {
-      width: 80%;
-      height: 100%;
-      margin-left: 12px;
-      margin-top: -5px;
-      color: white;
+    .th_ot {
+        width: 60%;
+        height: 40px;
+        color: white;
+     
     }
+     .th_ot>p{
+        padding:5%;
+    } 
 
-    #th_t {
-      color: white;
+    .th_t {
+        color: white;
     }
 
     #the_t {
-      height: 20%;
-      display: flex;
+        height: 20%;
+        display: flex;
     }
 
     #th_to {
-      width: 15%;
-      height: 100%;
+        width: 15%;
+        height: 50px;
+
+    }
+    #i2{
+      display:flex;
+      width: 250px;
+      height: 50px;
+      margin-top: 60px;
+    }
+    #i3{
+      width: 21%;
+      height: 50px;
+    }
+    
+    #i3>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
     }
 
-    #th_to > img {
-      width: 100%;
-      height: 100%;
-      border-radius: 30px;
+    #th_to>img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
     }
 
-    #th_tt {
-      width: 80%;
-      height: 100%;
-      margin-left: 12px;
-      margin-top: -5px;
-      color: white;
-    }
+    /* #th_tt {
+        width: 80%;
+        height: 100%;
+        margin-left: 12px;
+        margin-top: -5px;
+        color: white;
+    } */
 
-    #thi_t {
+    .thi_t {
+      
+      height:160px;
+      width:100%;
+      padding-top: 60px ;
+      font-size: 15px;
       color: white;
     }
 
     #four {
-      width: 100%;
-      height: 300px;
-      display: flex;
+        width: 100%;
+        height: 95px;
+        display: flex;
+        border-radius: 18px;
+        color:white;
+        margin-top: 70px;
+        background-image:linear-gradient(
+        to right,
+        #f05233 48%,
+        transparent 60%
+      ),url("https://wallpaperaccess.com/full/2077150.jpg") ;
     }
 
     #four_o {
-      width: 60%;
-      margin-top: 60px;
-      color: white;
+       padding:30px;
     }
+     #four_t {
+      width:70%;
+ 
 
-    #four_t {
-      margin-top: 80px;
-    }
+    } 
 
-    #four_t > button {
-      width: 150px;
-      height: 46px;
-      background-color: rgb(238, 37, 99);
-      border-radius: 5px;
+    #four_t>button {
+        width: 210px;
+        height: 46px;
+        background-color: black;
+        color:white;
+        margin-top: 25px;
+        margin-left: 82%;
     }
 
     #se_o_o {
-      width: 22%;
-      height: 40px;
-      color: rgb(238, 37, 99);
-      margin-bottom: -10px;
+        width: 22%;
+        height: 20px;
+        color: #ec008c;
+        margin-top:40px;
     }
 
     #sec_o_tr {
-      display: flex;
+        display: flex;
+        
+
     }
 
-    #sec_o_tr > div {
-      margin-right: 10px;
-      background-color: gray;
-      height: 25px;
-      width: 90px;
-      padding-top: 8px;
-      padding-left: 8px;
+    #sec_o_tr>div:nth-child(1) {
+        margin-right: 10px;
+        height: 29px;
+        width: 90px;
+        margin-left: 0px;
+        margin-top: 19px;
+        border-radius: 7px;
+        padding-top: 8px;
+        padding-left: 8px;
+        text-align: center;
+    }
+    #sec_o_tr>div:nth-child(2) {
+        margin-right: 10px;
+        height: 29px;
+        width: 90px;
+        margin-left: 10px;
+        margin-top: 19px;
+        border-radius: 7px;
+        padding-top: 8px;
+        padding-left: 8px;
+        text-align: center;
+    }
+    #sec_o_tr>div:nth-child(3) {
+        margin-right: 10px;
+        height: 29px;
+        width: 90px;
+        margin-top: 13px;
+        border-radius: 7px;
+        padding-top: 8px;
+        padding-left: 8px;
+        text-align: center;
     }
 
     #sec_o_f {
-      padding-right: 100px;
+        padding-right: 100px;
+        margin-top: 15px;
+        font-size: 20px;
     }
 
-    #sec_o_s > button {
-      width: 150px;
-      height: 45px;
-      background-color: rgb(238, 37, 99);
-      color: white;
+    #sec_o_s>button {
+        width: 150px;
+        height: 45px;
+        background-color: rgb(238, 37, 99);
+        color: white;
     }
 
     #core {
-      width: 550px;
-      height: 30px;
-      background-color: gray;
-      padding-top: 10px;
-      padding-left: 8px;
-      border-radius: 10px;
+        display:flex;
+        width: 730px;
+        height: 40px;
+        background-color: #333333;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-left: 10px;
+        border-radius: 10px;
+        font-weight: bolder;
+        font-size: 19px;
     }
 
     #sec_t_o {
-      width: 94%;
-      height: 45%;
-      margin-top: 20px;
-      border-radius: 7px;
-      background-color: gray;
-      padding-left: 20px;
+        width: 94%;
+        height: 45%;
+        margin-top: 20px;
+        border-radius: 7px;
+        padding-left: 20px;
     }
 
-    #sec_t_o > hr {
-      margin-right: 30px;
+    #sec_t_o>hr {
+        margin-right: 30px;
     }
 
     #sec_t_t {
-      display: flex;
+        display: flex;
     }
 
-    #sec_t_t > div {
-      background-color: gray;
-      padding: 14px;
-      margin-right: 15px;
-      height: 14px;
-      width: 90px;
-      border-radius: 10px;
-      margin-bottom: 8px;
+    #sec_t_t>div {
+        background-color: #333333;
+        height: 14px;
+        width: 70px;
+        padding: 12px;
+        margin-left: 19px;
+       
+        border-radius: 10px;
+        margin-bottom: 8px;
     }
 
     #ima {
-      width: 100%;
-      height: 250px;
-      border-left: 4px solid springgreen;
-      padding: 4px;
+        width: 100%;
+        height: 250px;
+        border-left: 4px solid springgreen;
+        padding: 4px;
     }
 
-    #ima > button {
-      width: 230px;
-      height: 40px;
-      border: 2px solid white;
-      margin-left: 52px;
+    #ima>button {
+        width: 230px;
+        height: 40px;
+        border: 2px solid white;
+        margin-left: 52px;
     }
-  </style>
+    #sec_O_t{
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    #f1{
+      font-size: 24px;
+      color:white;
+    }
+    #d2{
+     
+      height:200px;
+      width:830px;
+      font-size: 18px;
+      margin-top: 24px;
+      overflow: scroll;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    #b1{
+        height:36px;
+        width:280px;
+        background-color: #ee3f45;
+        color: white;
+        margin-top: 24px;
+        margin-left: 12px;
+        border:none;
+        cursor:pointer;
 
-  <body>
+    }
+    #g1{
+       
+        height:40px;
+        width:40px;
+        margin-top: 15px;
+        margin-left: 13px;
+        border-radius: 30px;
+    }
+    #g2{
+        display:flex;
+        margin-left: 15px;
+    }
+    #g3{
+        
+        height:20px;
+        width:160px;
+        margin-top: 15px;
+        margin-left: 16px;
+
+    }
+    #g5{
+     
+        height:90px;
+        width:200px;
+        margin-left: 86px; 
+    }
+    #b4{
+        height:36px;
+        width:250px;
+        background-color: #ee3f45;
+        color: white;
+        margin-top: 24px;
+        border:none;
+        cursor:pointer;
+ 
+    }
+    #f6{
+        display:flex;
+        font-size: 14px;
+    }
+    #cors{
+        display:none;
+        height:480px;
+        width:87%;
+        overflow: scroll;
+        overflow-x: hidden;
+         overflow-y: auto;
+        margin-top: 18px;
+        color:#728a8d;
+    }
+    #learn{
+        
+        height:450px;
+        width:90%;
+        margin-top: 18px;
+        color:white;
+        
+    }
+    #level{
+        background-color: #2b2a2a;
+    }
+    #time{
+        background-color: #2b2a2a;
+    }
+    #star{
+        display:flex;
+    }
+    .t1{
+        
+        display:flex;
+        height:80px;
+        width:100%;
+        margin-top: 20px;
+        background-color: #2b2a2a;
+        border-radius: 15px;
+       
+    }
+</style>
+
+<body>
     <div id="mainBody">
-      <div id="navItems"></div>
+        <div id="navItems">
 
-      <div id="containernav">
-        <div id="nav"></div>
-
-        <div id="searchBar"></div>
-      </div>
-      <div class="content">
-        <div id="container">
-          <div id="textarea">
-            <div id="first">
-              <div>
-                <h6>Home ></h6>
-              </div>
-              <div>
-                <h6>Browse ></h6>
-              </div>
-              <div>
-                <h6>Paths ></h6>
-              </div>
-            </div>
-            <div id="second" style="color: white">
-              <div id="second_one">
-                <div id="se_o_o">
-                  <h5>LEARNING PATHS</h5>
-                </div>
-                <div id="sec_O_t">
-                  <h1>JavaScript Core Language</h1>
-                </div>
-                <div id="sec_o_tr">
-                  <div>10 course</div>
-                  <div>16 hours</div>
-                  <div>skill iQ</div>
-                </div>
-                <div id="sec_o_f">
-                  <h5>
-                    JavaScript is an interpreted programming language that
-                    conforms to the ECMAScript specification. JavaScript is
-                    high-level, often just-in-time compiled, and multi-paradigm.
-                    It has curly-bracket syntax, dynamic typing, prototype-based
-                    object-orientation, and first-class functions. In this path
-                    you will learn the basics of JavaScript as well as more
-                    advanced topics such as promises, asynchronous programming,
-                    proxies and reflection.
-                  </h5>
-                </div>
-                <div id="sec_o_s">
-                  <button>GET STARTED</button>
-                </div>
-                <h2>Courses in this path</h2>
-                <div id="core">JavaScript Core Language</div>
-              </div>
-              <div id="second_two">
-                <div id="sec_t_o">
-                  <h2>What You Will Learn</h2>
-                  <ul>
-                    <li>Utilize modules for code organization</li>
-                    <li>Employ classes for code organization</li>
-                    <li>Understand communication and browser integration</li>
-                    <li>Demonstrate asynchronous programming techniques</li>
-                    <li>Use proxies and reflection</li>
-                  </ul>
-                  <hr />
-                  Experience
-                  <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                  </ul>
-                </div>
-                <h2>Other related topics</h2>
-                <div id="sec_t_t">
-                  <div>HTML</div>
-                  <div>Node.js</div>
-                </div>
-                <div id="ima">
-                  <h3>skillIQ</h3>
-                  <h1>Not sure where to start?</h1>
-                  <h5>See where your skills stand and where you can grow.</h5>
-                  <button>TAKE A SKILL ASSISMENT</button>
-                </div>
-              </div>
-            </div>
-            <div id="third">
-              <div id="third_one">
-                <h2>Learn with the best</h2>
-              </div>
-              <div id="third_two">
-                <div id="thi_o">
-                  <div id="th_o">
-                    <div id="th_oo">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/mark-zamoyta-v1.jpg"
-                      />
-                    </div>
-                    <div id="th_ot">
-                      <h3>Mark Zamoyta</h3>
-                    </div>
-                  </div>
-                  <div id="th_t">
-                    <h5>
-                      Mark started in the developer world over 25 years ago. He
-                      began his career with a Bachelor of Science in Computer
-                      Science from St. Johns University. After spending 10 years
-                      on Wall Street working for Goldman Sachs, Lehman Brothers
-                      and other major investment banks, Mark became interested
-                      in animation and video game software.
-                    </h5>
-                  </div>
-                </div>
-                <div id="thi_t">
-                  <div id="the_t">
-                    <div id="th_to">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/a4d1169c-fd62-46ea-9e46-e7ae41428f04.jpeg"
-                      />
-                    </div>
-                    <div id="th_tt">
-                      <h3>Paul D. Sheriff</h3>
-                    </div>
-                  </div>
-                  <div id="thi_t">
-                    <h5>
-                      Paul loves teaching and technology, and has been teaching
-                      tech and business topics for over 30 years. Paul helps
-                      clients develop applications, and instructs them on the
-                      best use of technology.
-                    </h5>
-                  </div>
-                </div>
-                <div id="thir_t">
-                  <div id="the_t">
-                    <div id="th_to">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/92b122b0-4503-43f2-8544-daeb17d023cd.png"
-                      />
-                    </div>
-                    <div id="th_tt">
-                      <h3>Barry Luijbregts</h3>
-                    </div>
-                  </div>
-                  <div id="thi_t">
-                    <h5>
-                      Barry is a software architect and developer with a passion
-                      for the cloud. He has worked for lots of companies
-                      throughout the last decade and is keen to share his
-                      knowledge with the community. He co-founded a usergroup
-                      focused on technology and soft-skills and currently
-                      teaches people about the benefits of the cloud.
-                    </h5>
-                  </div>
-                </div>
-                <div>
-                  <div id="the_t">
-                    <div id="th_to">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/jim-cooper-v1.jpg"
-                      />
-                    </div>
-                    <div id="th_tt">
-                      <h3>Jim Cooper</h3>
-                    </div>
-                  </div>
-                  <div id="thi_t">
-                    <h5>
-                      Jim Cooper is a software developer at Pluralsight. With
-                      more than 20 years of software development experience, he
-                      has gained a passion for Agile software development --
-                      especially Lean.
-                    </h5>
-                  </div>
-                </div>
-                <div>
-                  <div id="the_t">
-                    <div id="th_to">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/b740e395-5b77-4b8a-bd35-781a7788a5ba.jpeg"
-                      />
-                    </div>
-                    <div id="th_tt">
-                      <h3>Prateek Parekh</h3>
-                    </div>
-                  </div>
-                  <div id="thi_t">
-                    <h5>
-                      Prateek is a software engineer that has been working on
-                      designing, developing, and testing enterprise as well as
-                      customer facing applications for companies like Sun
-                      Microsystems, Oracle, and eBay.
-                    </h5>
-                  </div>
-                </div>
-                <div>
-                  <div id="the_t">
-                    <div id="th_to">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/aef1f7b5-64b9-4115-acfb-910a6dba9ae9.jpg"
-                      />
-                    </div>
-                    <div id="th_tt">
-                      <h3>Jeff Batt</h3>
-                    </div>
-                  </div>
-                  <div id="thi_t">
-                    <h5>
-                      Jeff has 10+ years experience in the digital learning and
-                      media industry. Currently he is Founder and Head
-                      Trainer/Sensei at Learning Dojo, a company dedicated to
-                      training you to become a software ninja in a variety of
-                      eLearning, web, and mobile related software applications.
-                    </h5>
-                  </div>
-                </div>
-                <div>
-                  <div id="the_t">
-                    <div id="th_to">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/7265d297-53d8-44a1-a49c-8f99d777b866.jpeg"
-                      />
-                    </div>
-                    <div id="th_tt">
-                      <h3>Marques Woodson</h3>
-                    </div>
-                  </div>
-                  <div id="thi_t">
-                    <h5>
-                      Software engineer in Chicago with 10+ years of experience
-                      working Javascript applications on both the client side
-                      and the server side.
-                    </h5>
-                  </div>
-                </div>
-                <div>
-                  <div id="the_t">
-                    <div id="th_to">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/jonathan-mills-v2.jpg"
-                      />
-                    </div>
-                    <div id="th_tt">
-                      <h3>Jonathan Mills</h3>
-                    </div>
-                  </div>
-                  <div id="thi_t">
-                    <h5>
-                      Jonathan is a Pluralsight Author, Technology Advisor, and
-                      Business Leader. As a member of the Chief Digital Advisory
-                      team at World Wide Technology, Jonathan is able to
-                      leverage his unique experiences and skills to drive
-                      digital transformation for his clients. As a dedicated
-                      developer community leader, Jonathan serves on the board
-                      of directors for the Kansas City Developers Conference, is
-                      a Microsoft MVP, and is a regular speaker and keynote
-                      presenter at conferences around the globe.
-                    </h5>
-                  </div>
-                </div>
-                <div>
-                  <div id="the_t">
-                    <div id="th_to">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/nate-taylor-v2.jpg"
-                      />
-                    </div>
-                    <div id="th_tt">
-                      <h3>Nate Taylor</h3>
-                    </div>
-                  </div>
-                  <div id="thi_t">
-                    <h5>
-                      Nate's first program was written in QBasic on an 8086
-                      clone his dad built. Since then he's written applications
-                      in C++, .NET, and Node.js
-                    </h5>
-                  </div>
-                </div>
-                <div>
-                  <div id="the_t">
-                    <div id="th_to">
-                      <img
-                        src="https://pluralsight.imgix.net/author/lg/08f9ff65-6918-4d4d-a6c9-f406931f4f37.jpg"
-                      />
-                    </div>
-                    <div id="th_tt">
-                      <h3>Marcin Hoppe</h3>
-                    </div>
-                  </div>
-                  <div id="thi_t">
-                    <h5>
-                      Marcin Hoppe is a senior manager on the Product Security
-                      team at Auth0. He is passionate about writing secure
-                      JavaScript code and is an active member of the open source
-                      security community.
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="four">
-              <div id="four_o">
-                <h1>Join our learners and upskill in leading technologies</h1>
-              </div>
-              <div id="four_t">
-                <button>GET STARTED</button>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+
+        <div id="containernav">
+            <div id="nav">
+
+            </div>
+
+            <div id="searchBar">
+
+            </div>
+        </div>
+        <div class="content">
+            <div id="container">
+                <div id="textarea">
+                    <div id="first">
+                        <div>
+                            <h5>Home ></h5>
+                        </div>
+                        <div>
+                            <h5>&ensp;&ensp;Browse ></h5>
+                        </div>
+                        <div>
+                            <h5>&ensp;&ensp;Course ></h5>
+                        </div>
+                    </div>
+                    <div id="second" style="color: white;">
+                        <div id="second_one">
+                            <div id="se_o_o">
+                                <h5>LEARNING PATHS</h5>
+                            </div>
+                            <div id="sec_O_t">
+                                <p id="titel"></p>
+                            </div>
+                            <div id="sec_o_tr">
+                                <div id="level"></div>
+                                <div id="time"></div>
+                                <div id="star">
+                                    <span style="font-size:130%;color:yellow;">&starf;</span>
+                                    <span style="font-size:130%;color:yellow;">&starf;</span>
+                                    <span style="font-size:130%;color:yellow;">&starf;</span>
+                                    <span style="font-size:130%;color:yellow;">&starf;</span>
+                                    <span style="font-size:130%;color:yellow;">&starf;</span>
+                                    <span id="rate"></span>
+                                </div>
+                               
+
+                            </div>
+                            <div id="sec_o_f">
+                                <p id="sd"></p>
+                            </div>
+                            <!-- <div id="sec_o_s">
+                                <button>GET STARTED</button>
+                            </div> -->
+                            <p style="font-size: 25px;font-weight: bolder;margin-top: 30px;">Courses in this path</p>
+                            <div id="core">
+                                <p>Course Preview</p>
+                                <img
+                                id="set"
+                                style="margin-left:530px;cursor:pointer;"
+                                height=30px;
+                                width=30px;
+                                src="https://cdn-icons-png.flaticon.com/128/271/271210.png">
+
+
+                            </div>
+                            <div id="cors">
+                                <div class="t1">
+                                    <p style="margin-left:20px;margin-top:16px;font-size:23px;color:#728a8d">Course Overview :</p>
+                                    <h3 style="margin-left:520px;margin-top:16px;font-size:23px;color:#728a8d">2min</h3>
+                                </div>
+                                <hr>
+                                <div class="t1">
+                                    <p style="margin-left:20px;margin-top:16px;font-size:23px;color:#728a8d">Getting Started :</p>
+                                    <h3 style="margin-left:530px;margin-top:16px;font-size:23px;color:#728a8d">18min</h3>
+                                </div>
+                                <hr>
+                                <div class="t1">
+                                    <p style="margin-left:20px;margin-top:16px;font-size:23px;color:#728a8d">Exploring the Eclipse Workbench:</p>
+                                    <h3 style="margin-left:353px;margin-top:16px;font-size:23px;color:#728a8d">15min</h3>
+                                </div>
+                                <hr>
+                                <div class="t1">
+                                    <p style="margin-left:20px;margin-top:16px;font-size:23px;color:#728a8d">Digging Deep into the Project/Package Explorer:</p>
+                                    <h3 style="margin-left:210px;margin-top:16px;font-size:23px;color:#728a8d">29min</h3>
+                                </div>
+                                <hr>
+                                <div class="t1">
+                                    <p style="margin-left:20px;margin-top:16px;font-size:23px;color:#728a8d">Editing Code :</p>
+                                    <h3 style="margin-left:560px;margin-top:16px;font-size:23px;color:#728a8d">33min</h3>
+                                </div>
+                                <hr>
+                                <div class="t1">
+                                    <p style="margin-left:20px;margin-top:16px;font-size:23px;color:#728a8d">Customizing Eclipse :</p>
+                                    <h3 style="margin-left:480px;margin-top:16px;font-size:23px;color:#728a8d">26min</h3>
+                                </div>
+                                <hr>
+                                <div class="t1">
+                                    <p style="margin-left:20px;margin-top:16px;font-size:23px;color:#728a8d">Navigating Code:</p>
+                                    <h3 style="margin-left:530px;margin-top:16px;font-size:23px;color:#728a8d">33min</h3>
+                                </div>
+                                <hr>
+                                <div class="t1">
+                                    <p style="margin-left:20px;margin-top:16px;font-size:20px;color:#728a8d">Searching and Navigating with More Power:</p>
+                                    <h3 style="margin-left:315px;margin-top:16px;font-size:23px;color:#728a8d">25min</h3>
+                                </div>
+                                <hr>
+                                <div class="t1">
+                                    <p style="margin-left:20px;margin-top:16px;font-size:20px;color:#728a8d">Making the IDE Work Harder for You:</p>
+                                    <h3 style="margin-left:367px;margin-top:16px;font-size:23px;color:#728a8d">57min</h3>
+                                </div>
+                            </div>
+                            <div id="learn">
+                            </div>
+
+                        </div>
+                        <div id="second_two">
+                            <div id="sec_t_o">
+                              <h2 style="color:white;margin-left:10px;padding-top:20px;">Try for free</h2>
+                              <p style="color:white;margin-left:10px;font-size: 13px; margin-top: 8px;">Get this course plus top-rated picks in tech skills and other popular topics.</p>
+                              <button id="b1">GET STARTED</button>
+                              <p style="color:white;margin-left:14px;padding-top:20px;font-size: 12px">₹ 1,499 per month after 10 day trial</p><br>
+                              <hr style="color:gray;">
+                              <p style="color:white;margin-left:25px;font-size: 13px; margin-top: 22px;font-weight: bolder;">Your 10 day Standard free trial includes</p>
+                             <div id="g2">
+                                 <div id="g1">
+                                     <img
+                                     style="border-radius: 30px;"
+                                     height="100%";
+                                     width="100%";
+                                     src="https://img.icons8.com/color/2x/play-button-circled--v2.gif">
+                                 </div>
+                                 <div id="g3"style="color:white;font-weight: bolder; padding:5px;">Expert-led courses</div>
+                             </div>
+                             <div id="g5">
+                                 <p style="color:white;font-size: 13px">Keep up with the pace of change with thousands of expert-led, in-depth courses.</p>
+                             </div>
+                             <hr style="color:gray;">
+                            </div>
+                           
+                            <div>
+                                <h4 style="color:white;margin-left:25px;">For teams</h4>
+                                <div id="f6">
+                                    <p style="color:#ec008c;margin-left:25px;margin-top:9px;cursor:pointer">Give up to 10 users </p>
+                                    &ensp;<p style="margin-top:9px;">access to our full library</p>
+                                </div>
+                                <p style="color:white;font-size: 14px;margin-left: 25px;">including this course free for 14 days</p><br>
+                                <hr style="color:gray;">
+                               
+
+                            </div><br>
+                            
+
+                            <h2 style="margin-left:22px;">Other related topics</h2><br>
+                            <div id="sec_t_t">
+                                <div>HTML</div>
+                                <div>Node.js</div>
+                            </div><br>
+                            <div id="ima" style="margin-left:22px;">
+                                <h3 style="margin-left:9px;"> skillIQ</h3>
+                                <h2 style="margin-left:9px;font-size: 29px;margin-top: 18px;">Not sure where to start?</h2><br>
+                                <h6 style="margin-left:9px;">See where your skills stand and where you can grow.</h6><br>
+                                <button id="b4";style="margin-left:10px;margin-top: 22px;">TAKE A SKILL ASSISMENT</button>
+                               
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div id="auth", style="margin-top: 460px;">
+                    
+                    </div>
+                    <div id="see">
+
+                    </div>
+                   
+                    <div id="third">
+                        <div id="third_one">
+                            <h2 style="margin-left:12px;">Learn with the best</h2>
+                        </div>
+                        <div id="third_two">
+                            <div id="thi_o">
+                                <div class="th_o">
+                                    <div class="th_oo">
+                                        <img src="https://pluralsight.imgix.net/author/lg/mark-zamoyta-v1.jpg">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Mark Zamoyta</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                        <p style="margin-top:12px;">Mark started in the developer world over 25 years ago. He began his career with
+                                        a Bachelor of Science in Computer Science from St. Johns University. After
+                                        spending 10 years on Wall Street working for Goldman Sachs, Lehman Brothers and
+                                        other major investment banks, Mark became interested in animation and video game
+                                        software.</p>
+                                </div>
+
+                            </div>
+                            <div id="thi_t">
+                                <div class="th_o">
+                                    <div class="th_oo">
+                                        <img
+                                            src="https://pluralsight.imgix.net/author/lg/a4d1169c-fd62-46ea-9e46-e7ae41428f04.jpeg">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Paul D. Sheriff</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                    <p style="margin-top:12px;">Paul loves teaching and technology, and has been teaching tech and business
+                                        topics for over 30 years. Paul helps clients develop applications, and instructs
+                                        them on the best use of technology.</p>
+                                </div>
+                            </div>
+                            <div id="thir_t">
+                                <div  class="th_o">
+                                    <div class="th_oo">
+                                        <img
+                                            src="https://pluralsight.imgix.net/author/lg/92b122b0-4503-43f2-8544-daeb17d023cd.png">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Barry Luijbregts</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                    <p style="margin-top:12px;">Barry is a software architect and developer with a passion for the cloud. He has
+                                        worked for lots of companies throughout the last decade and is keen to share his
+                                        knowledge with the community. He co-founded a usergroup focused on technology
+                                        and soft-skills and currently teaches people about the benefits of the cloud.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="thir_t">
+                                <div class="th_o">
+                                    <div class="th_oo">
+                                        <img src="https://pluralsight.imgix.net/author/lg/jim-cooper-v1.jpg">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Jim Cooper</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                    <p style="margin-top:12px;">Jim Cooper is a software developer at Pluralsight. With more than 20 years of
+                                        software development experience, he has gained a passion for Agile software
+                                        development -- especially Lean.</p>
+                                </div>
+                            </div>
+                            <div  id="thir_t">
+                                <div class="th_o">
+                                    <div class="th_oo">
+                                        <img
+                                            src="https://pluralsight.imgix.net/author/lg/b740e395-5b77-4b8a-bd35-781a7788a5ba.jpeg">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Prateek Parekh</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                    <p style="margin-top:12px;">Prateek is a software engineer that has been working on designing, developing,
+                                        and testing enterprise as well as customer facing applications for companies
+                                        like Sun Microsystems, Oracle, and eBay.</p>
+                                </div>
+                            </div>
+                            <div  id="thir_t">
+                                <div class="th_o">
+                                    <div class="th_oo">
+                                        <img
+                                            src="https://pluralsight.imgix.net/author/lg/aef1f7b5-64b9-4115-acfb-910a6dba9ae9.jpg">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Jeff Batt</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                    <p style="margin-top:12px;">Jeff has 10+ years experience in the digital learning and media industry.
+                                        Currently he is Founder and Head Trainer/Sensei at Learning Dojo, a company
+                                        dedicated to training you to become a software ninja in a variety of eLearning,
+                                        web, and mobile related software applications.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="thir_t">
+                                <div class="th_o">
+                                    <div class="th_oo">
+                                        <img
+                                            src="https://pluralsight.imgix.net/author/lg/7265d297-53d8-44a1-a49c-8f99d777b866.jpeg">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Marques Woodson</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                    <p style="margin-top:12px;">Software engineer in Chicago with 10+ years of experience working Javascript
+                                        applications on both the client side and the server side.</p>
+                                </div>
+                            </div>
+                            <div id="thir_t">
+                                <div class="th_o">
+                                    <div class="th_oo">
+                                        <img src="https://pluralsight.imgix.net/author/lg/jonathan-mills-v2.jpg">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Jonathan Mills</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                    <p style="margin-top:12px;">Jonathan is a Pluralsight Author, Technology Advisor, and Business Leader. As a
+                                        member of the Chief Digital Advisory team at World Wide Technology, Jonathan is
+                                        able to leverage his unique experiences and skills to drive digital
+                                        transformation for his clients. As a dedicated developer community leader,
+                                        Jonathan serves on the board of directors for the Kansas City Developers
+                                        Conference, is a Microsoft MVP, and is a regular speaker and keynote presenter
+                                        at conferences around the globe.</p>
+                                </div>
+                            </div>
+                            <div id="thir_t">
+                                <div class="th_o">
+                                    <div class="th_oo">
+                                        <img src="https://pluralsight.imgix.net/author/lg/nate-taylor-v2.jpg">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Nate Taylor</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                    <p style="margin-top:12px;">Nate's first program was written in QBasic on an 8086 clone his dad built. Since
+                                        then he's written applications in C++, .NET, and Node.js</p>
+                                </div>
+                            </div>
+                            <div id="thir_t">
+                                <div class="th_o">
+                                    <div class="th_oo">
+                                        <img
+                                            src="https://pluralsight.imgix.net/author/lg/08f9ff65-6918-4d4d-a6c9-f406931f4f37.jpg">
+                                    </div>
+                                    <div class="th_ot">
+                                        <h3 style="margin-top:8px;margin-left: 30px;">Marcin Hoppe</h3>
+                                    </div>
+                                </div>
+                                <div class="thi_t">
+                                    <p style="margin-top:12px;">Marcin Hoppe is a senior manager on the Product Security team at Auth0. He is
+                                        passionate about writing secure JavaScript code and is an active member of the
+                                        open source security community.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="four">
+                        <div id="four_o">
+                            <h1>Ready to upskill?</h1>
+                        </div>
+                        <div id="four_t">
+                            <button>GET STARTED</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
-    <div id="footer"></div>
-  </body>
+    <div id="footer" >
+
+    </div>
+</body>
+
 </html>
 <script type="module" src="./scripts/impexpnavfoot.js"></script>
 <script type="module" src="./scripts/navfunctions.js"></script>
-<script src="./scripts/search.js"></script>
+<script src="./scripts/learning.js"></script>

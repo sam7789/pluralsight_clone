@@ -122,6 +122,20 @@ p {
   position: relative;
   /* z-index: 20; */
 }
+#noncourse{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  /* line-height: 1.5em; */
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  padding:6px 0px;
+  background-color: #f60f0f;
+  position: relative;
+  text-align: center;
+}
 
 #coursediv p {
   margin: 10px 10%;
