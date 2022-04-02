@@ -14,3 +14,22 @@ let footerdiv = document.getElementById('footer');
 footerdiv.innerHTML = footer();
 console.log(footer);
 
+
+let username = localStorage.getItem("username");
+console.log(username);
+
+    if(username !== null){
+      document.getElementById("signinbtn").innerHTML= username;
+      console.log("user",username);
+      document.getElementById("out").innerHTML="SIGN OUT";
+      document.getElementById("out").addEventListener("click",function(){
+          localStorage.removeItem("username");
+          document.getElementById("signinbtn").innerHTML= "Sign in";
+          document.getElementById("out").innerHTML="SIGN IN WITH";
+      });
+
+    }
+    
+
+
+    
