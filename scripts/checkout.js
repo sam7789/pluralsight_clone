@@ -179,17 +179,46 @@ function signup() {
       signup_pass,
     };
 
-    // get array from localstorage
-    let array = JSON.parse(localStorage.getItem("plural_Signup"));
-    //push new user to array
-    array.push(user); // adding new user
+    register(user);
 
-    console.log("array:", array);
-    localStorage.setItem("plural_Signup", JSON.stringify(array));
     hide1.setAttribute("style", "display: none");
     hide2.setAttribute("style", "display: block");
     arrow2.setAttribute("style", "background: rgb(0, 132, 189)");
-    console.log("user:", user);
+    // console.log("user:", user);
+  }
+}
+
+async function register(user) {
+  try {
+    var register_data = {
+      firstName: user.f_name,
+      lastName: user.l_name,
+      email: user.mail,
+      password: user.signup_pass,
+    };
+
+    register_data = JSON.stringify(register_data);
+
+    let res = await fetch("https://pluralsightfw15.herokuapp.com/register", {
+      method: "POST",
+      body: register_data,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    let data = await res.json();
+    console.log(data);
+    if (data.message) {
+      alert("user already exists");
+    } else {
+      alert("Registered successfully , Make payment");
+      // window.location.href = "index.html"
+    }
+
+    // window.location.href = "index.html"
+  } catch (err) {
+    return console.log({ err: "error coming from signup page" });
   }
 }
 
@@ -340,45 +369,57 @@ function confirm_pay() {
 }
 
 function signin(e) {
-  if (localStorage.getItem("loggedin_user") === null) {
-    localStorage.setItem("loggedin_user", JSON.stringify([]));
-  }
-
+  // created by ranjith
+  // if (localStorage.getItem("loggedin_user") === null) {
+  //   localStorage.setItem("loggedin_user", JSON.stringify([]));
+  // }
   e.preventDefault();
   let myForm = document.getElementById("myForm");
   let username = myForm.username.value;
   let password = myForm.password.value;
-  let log_array = JSON.parse(localStorage.getItem("loggedin_user"));
+  let loggedin_user = {
+    email: username,
+    password: password,
+  };
 
   let top_note = document.getElementById("top_error");
   var count = 0;
 
   if (username.length == 0 || password.length == 0) {
     top_note.setAttribute("style", "display:block");
-  } else {
-    let all_users = JSON.parse(localStorage.getItem("plural_Signup"));
-    console.log("all_users:", all_users);
-    all_users.forEach(function (user) {
-      if (username == user.mail && password == user.signup_pass) {
-        count++;
-      }
+  }
+  login(loggedin_user);
+}
+async function login(user) {
+  try {
+    var login_data = {
+      email: user.email,
+      password: user.password,
+    };
+
+    login_data = JSON.stringify(login_data);
+
+    let res = await fetch("https://pluralsightfw15.herokuapp.com/login", {
+      method: "POST",
+      body: login_data,
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
-    console.log("count:", count);
 
-    if (count > 0) {
-      let logg = {
-        username,
-        password,
-      };
-
-      log_array[0] = logg;
-      localStorage.setItem("loggedin_user", JSON.stringify(log_array));
-      setInterval(() => {
-        window.location.href = "/index.html";
-      }, 2000);
+    let data = await res.json();
+    console.log(data);
+    if (data.message) {
+      alert("wrong email or password");
     } else {
-      top_note.setAttribute("style", "display:block");
+      alert("login successfully");
+      localStorage.setItem("username", JSON.stringify(data.user.firstName));
+      window.location.href = "index.html";
     }
+
+    // window.location.href = "index.html"
+  } catch (err) {
+    return console.log({ err: "error coming from login page" });
   }
 }
 
