@@ -1,5 +1,5 @@
-    let navigation = () => {
-        return (`
+let navigation = () => {
+  return `
         <div><a href="./index.html"><img
                 src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/global/header/PS_logo.png"
                 alt=""></a>
@@ -21,21 +21,11 @@
                 <p id="signinbtn">Sign in <span>&#9662</span></p>
             </div>
             </div>
-            `)
-    }
+            `;
+};
 
-    let searchpart = () => {
-        return (`
-        <div id="searchItem">
-        <i class="fa fa-search"></i>
-        <input type="text" id="searchInput" placeholder="What do you want to learn?" />
-        <span id="p">&times;</span>
-    </div>
-        `)
-    }
-
-    let popuppart = () => {
-        return (`
+let popuppart = () => {
+  return `
         <div id="platform">
             <div>
             <div class="box">
@@ -247,7 +237,7 @@
 
                 <div>
                 <div>
-                    <h4><a href="./signin.html">SIGN IN WITH</a></h4>
+                    <h4 id="out">SIGN IN WITH</h4>
                 </div>
                 <div>
                     <a href="./signin.html">
@@ -261,7 +251,7 @@
             </div>
             </div>
         </div>
-        `)
-    }
+        `;
+};
 
-    export { navigation, searchpart, popuppart };
+export { navigation, popuppart };

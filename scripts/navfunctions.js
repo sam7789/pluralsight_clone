@@ -10,6 +10,7 @@ let body = document.getElementById('mainBody');
   let platform = document.getElementById('platform');
   let platbtn = document.getElementById('platbtn');
   let closeDiv = document.getElementById("p");
+  let displaysearch = document.getElementById("displaysearch");
 
 
   // Platform Onclick Visibility Fuction
@@ -147,6 +148,7 @@ let body = document.getElementById('mainBody');
 
   // search click div visiblity function
   searchItem.style.display = "none";
+  displaysearch.style.display = "none"
   search.addEventListener("click", () => {
     navResources.style.display = "none";
     resobtn.setAttribute("class", "popdown");
@@ -157,9 +159,15 @@ let body = document.getElementById('mainBody');
     navSkills.style.display = "none";
     signinbtn.setAttribute("class", "popdown");
     searchItem.style.display = "flex";
+    displaysearch.style.display = "block";
+
 
   });
   // Search Div visibilty none function;
   closeDiv.addEventListener("click", () => {
+    searchItem.value = "";
     searchItem.style.display = "none";
+    displaysearch.style.display = "none";
+    displaysearch.innerHTML = "";
+    
   });

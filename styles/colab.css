@@ -1,129 +1,126 @@
-
-
-#vdo{
-box-sizing : border-box; 
-margin : 0px; 
-color : rgb(238, 238, 238); 
-min-height : 0px; 
-background-color : rgba(0, 0, 0, .6); 
-position : relative; 
-height: 700px;
-
+#vdo {
+  box-sizing: border-box;
+  margin: 0px;
+  color: rgb(238, 238, 238);
+  min-height: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  height: 700px;
 }
 #videoBG {
-position: relative;
-z-index: -1;
-width: 100%;
+  position: relative;
+  z-index: -1;
+  width: 100%;
 }
-#textDiv{
-padding-left : 15px; 
-padding-right : 15px; 
-width : 935px; 
-margin : 0px; 
-padding : 0px 25px; 
-min-height : 1px; 
-margin-top: 150px;
-position : absolute;
-top: 0;
+#textDiv {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 935px;
+  margin: 0px;
+  padding: 0px 25px;
+  min-height: 1px;
+  margin-top: 150px;
+  position: absolute;
+  top: 0;
 }
-#textDiv>img{
-box-sizing : border-box; 
-max-width : 100%; 
-width: 80%;
-height : 80px; 
-display : inline-block; 
-margin-bottom: 40px; 
+#textDiv > img {
+  box-sizing: border-box;
+  max-width: 100%;
+  width: 80%;
+  height: 80px;
+  display: inline-block;
+  margin-bottom: 40px;
 }
-#textDiv>p{
-box-sizing : border-box; 
-padding : 0px; 
-font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-font-size : 17px; 
-font-weight : 400; 
-line-height : 23.8px; 
-margin-bottom : 20px; 
-text-rendering : optimizelegibility; 
-color : rgb(238, 238, 238); 
-
+#textDiv > p {
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23.8px;
+  margin-bottom: 20px;
+  text-rendering: optimizelegibility;
+  color: rgb(238, 238, 238);
 }
-#textDiv button{
-box-sizing : border-box; 
-color : rgb(255, 255, 255); 
-line-height : 16.5px; 
-text-decoration : none solid rgb(255, 255, 255); 
-transition : box-shadow 0.3s ease-in-out 0s; 
-word-break : break-word; 
-font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-font-weight : 400; 
-font-size : 15px; 
-padding : 18px 34px; 
-border-radius : 2px; 
-background-color :rgb(248, 0, 103);
-position : relative; 
-text-align : center; 
-display : block; 
-margin : 0px 20px 20px 0px; 
-text-transform : uppercase; 
-margin-right : 20px; 
-border: none;
-
+#textDiv button {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  line-height: 16.5px;
+  text-decoration: none solid rgb(255, 255, 255);
+  transition: box-shadow 0.3s ease-in-out 0s;
+  word-break: break-word;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 18px 34px;
+  border-radius: 2px;
+  background-color: rgb(248, 0, 103);
+  position: relative;
+  text-align: center;
+  display: block;
+  margin: 0px 20px 20px 0px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  border: none;
 }
-#textDiv button:hover{
-cursor : pointer;
-background : rgba(0, 0, 0, 0) linear-gradient(145deg, rgb(248, 59, 1) 0px, rgb(236, 0, 110) 100%) repeat scroll 0% 0% / auto padding-box border-box; 
-box-shadow : rgba(0, 0, 0, 0.6) 0px 10px 40px;
+#textDiv button:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(145deg, rgb(248, 59, 1) 0px, rgb(236, 0, 110) 100%) repeat
+    scroll 0% 0% / auto padding-box border-box;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 40px;
 }
-#pinkDiv{
-box-sizing : border-box; 
-margin : 0px; 
-padding : 0; 
-color : rgb(238, 238, 238); 
-margin-top :-80px;
-min-height : 0px; 
-position : relative; 
-padding-top : 150px; 
-padding-bottom : 150px; 
-background-color :rgb(223, 2, 112);
+#pinkDiv {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  color: rgb(238, 238, 238);
+  margin-top: -80px;
+  min-height: 0px;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: rgb(223, 2, 112);
 }
-#pinkContent{
-box-sizing : border-box; 
-margin : 0px 12.5px; 
-max-width : 1400px; 
-width : 1400px; 
-padding : 0px; 
-
+#pinkContent {
+  box-sizing: border-box;
+  margin: 0px 12.5px;
+  max-width: 1400px;
+  width: 1400px;
+  padding: 0px;
 }
-#pinkContent>h2{
-box-sizing : border-box; 
-margin : 0px 0px 20px; 
-padding : 0px; 
-font-family: "Ramabhadra", sans-serif;
-line-height : 48px; 
-margin-bottom : 20px; 
-margin-top : 0px; 
-font-size : 40px; 
-color : rgb(255, 255, 255); 
-width: 50%;
-
+#pinkContent > h2 {
+  box-sizing: border-box;
+  margin: 0px 0px 20px;
+  padding: 0px;
+  font-family: "Ramabhadra", sans-serif;
+  line-height: 48px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  width: 50%;
 }
-#pinkContent button{
-color : rgb(255, 255, 255); 
-text-decoration : none solid rgb(255, 255, 255); 
-transition : box-shadow 0.3s ease-in-out 0s; 
-font-family: "Ramabhadra", sans-serif;
-font-size : 15px; 
-padding : 14px 34px; 
-border-radius : 2px; 
-background : rgb(24, 24, 24) ; 
-position : relative; 
-text-align : center; 
-margin : 0px 20px 20px 0px; 
-text-transform : uppercase; 
-border: none;
+#pinkContent button {
+  color: rgb(255, 255, 255);
+  text-decoration: none solid rgb(255, 255, 255);
+  transition: box-shadow 0.3s ease-in-out 0s;
+  font-family: "Ramabhadra", sans-serif;
+  font-size: 15px;
+  padding: 14px 34px;
+  border-radius: 2px;
+  background: rgb(24, 24, 24);
+  position: relative;
+  text-align: center;
+  margin: 0px 20px 20px 0px;
+  text-transform: uppercase;
+  border: none;
 }
-#pinkContent button:hover{
-cursor : pointer;
-color : rgb(255, 255, 255);
-box-shadow : rgba(0, 0, 0, 0.4) 0px 10px 30px;
-background : rgb(24, 24, 24);
+#pinkContent button:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 30px;
+  background: rgb(24, 24, 24);
 }

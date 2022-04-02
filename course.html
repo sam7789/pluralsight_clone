@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #big {
+      width: 100%;
+      height: 320px;
+      border: 1px solid red;
+      background-color: black;
+      padding-top: 20px;
+    }
+
+    #displaycours {
+      margin: auto;
+      width: 70%;
+      height: 300px;
+      display: flex;
+    }
+
+    #course_option {
+      width: 55%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 25px;
+    }
+
+    #course_option > div {
+      height: 130px;
+      border-radius: 10px;
+      background-color: rgb(96, 96, 107);
+    }
+
+    #javascript {
+      display: flex;
+    }
+
+    #javaone {
+      width: 70%;
+    }
+
+    #javatwo {
+      width: 30%;
+    }
+
+    #javatwo > img {
+      width: 93%;
+      height: 61%;
+      margin: -5px;
+    }
+
+    #javaone > h5,
+    h3,
+    h6 {
+      margin-top: -10px;
+      margin-left: 10px;
+      color: white;
+    }
+
+    #javaone > h4 {
+      margin-left: 10px;
+      margin-top: +5px;
+      color: rgb(236, 11, 127);
+    }
+
+    #angular {
+      display: flex;
+    }
+
+    #angone {
+      width: 70%;
+    }
+
+    #angtwo {
+      width: 30%;
+    }
+
+    #angtwo > img {
+      width: 93%;
+      height: 61%;
+      margin: -5px;
+    }
+
+    #angone > h5,
+    h3,
+    h6 {
+      margin-top: -10px;
+      margin-left: 10px;
+      color: white;
+    }
+
+    #angone > h4 {
+      margin-left: 10px;
+      margin-top: +5px;
+      color: rgb(236, 11, 127);
+    }
+
+    #python {
+      display: flex;
+    }
+
+    #pytone {
+      width: 70%;
+    }
+
+    #pyttwo {
+      width: 30%;
+    }
+
+    #pyttwo > img {
+      width: 93%;
+      height: 61%;
+      margin: -5px;
+    }
+
+    #pytone > h5,
+    h3,
+    h6 {
+      margin-top: -10px;
+      margin-left: 10px;
+      color: white;
+    }
+
+    #pytone > h4 {
+      margin-left: 10px;
+      margin-top: +5px;
+      color: rgb(236, 11, 127);
+    }
+
+    #c {
+      display: flex;
+    }
+
+    #cone {
+      width: 70%;
+    }
+
+    #ctwo {
+      width: 30%;
+    }
+
+    #ctwo > img {
+      width: 93%;
+      height: 61%;
+      margin: -5px;
+    }
+
+    #cone > h5,
+    h3,
+    h6 {
+      margin-top: -10px;
+      margin-left: 10px;
+      color: white;
+    }
+
+    #cone > h4 {
+      margin-left: 10px;
+      margin-top: +5px;
+      color: rgb(236, 11, 127);
+    }
+
+    #view_course_index {
+      width: 44%;
+      height: 100%;
+    }
+
+    #viewone {
+      width: 50%;
+      padding-left: 30px;
+      color: white;
+    }
+
+    #viewtwo {
+      padding-left: 30px;
+      color: white;
+    }
+  </style>
+
+  <body>
+    <div id="big">
+      <div id="displaycours">
+        <div id="course_option">
+          <div id="javascript">
+            <div id="javaone">
+              <h4>PATH</h4>
+              <h3>JavaScript</h3>
+              <h5>11 course</h5>
+              <h5>Take a look</h5>
+            </div>
+            <div id="javatwo">
+              <img
+                src="https://pluralsight2.imgix.net/paths/images/javascript-542e10ea6e.png"
+              />
+            </div>
+          </div>
+          <div id="angular">
+            <div id="angone">
+              <h4>PATH</h4>
+              <h3>JavaScript</h3>
+              <h5>11 course</h5>
+              <h5>Take a look</h5>
+            </div>
+            <div id="angtwo">
+              <img
+                src="https://pluralsight.imgix.net/paths/path-icons/angular-14a0f6532f.png"
+              />
+            </div>
+          </div>
+          <div id="python">
+            <div id="pytone">
+              <h4>PATH</h4>
+              <h3>JavaScript</h3>
+              <h5>11 course</h5>
+              <h5>Take a look</h5>
+            </div>
+            <div id="pyttwo">
+              <img
+                src="https://pluralsight.imgix.net/paths/python-7be70baaac.png"
+              />
+            </div>
+          </div>
+          <div id="c">
+            <div id="cone">
+              <h4>PATH</h4>
+              <h3>JavaScript</h3>
+              <h5>11 course</h5>
+              <h5>Take a look</h5>
+            </div>
+            <div id="ctwo">
+              <img
+                src="https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png?"
+              />
+            </div>
+          </div>
+        </div>
+        <div id="view_course_index">
+          <div id="viewone">
+            <p style="color: rgb(236, 11, 127)">TRENDING TECHNOLOGIES</p>
+            <h1>Popular topics to learn now</h1>
+          </div>
+          <div id="viewtwo">
+            <h5>
+              Not sure what technologies to focus on? The Technology Index ranks
+              850+ technologies by their relative popularity. See what’s topping
+              the charts and get recommended courses to skill up.
+            </h5>
+            <h4>View the index</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  document.querySelector("#javascript").addEventListener("click", function () {
+    window.location.href = "learning_path.html";
+  });
+  document.querySelector("#angular").addEventListener("click", function () {
+    window.location.href = "learning_path.html";
+  });
+  document.querySelector("#python").addEventListener("click", function () {
+    window.location.href = "learning_path.html";
+  });
+  document.querySelector("#c").addEventListener("click", function () {
+    window.location.href = "learning_path.html";
+  });
+  document.querySelector("#viewtwo >h4").addEventListener("click", function () {
+    window.location.href = "information.html";
+  });
+</script>
+<!-- <script type="module">
+    import displaycourse from "../INDEX/sidebar.js";
+    console.log(displaycourse);
+    let displaycours = document.querySelector("#displaycours");
+    displaycours.innerHTML = displaycourse();
+</script> -->

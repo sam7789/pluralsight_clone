@@ -1,5 +1,5 @@
 let footer = () => {
-    return (`<div>
+  return `<div>
     <div>
       <h4>SOLUTIONS</h4>
       <P>Pluralsight Skills</P>
@@ -75,7 +75,7 @@ let footer = () => {
       <img src="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/icons/desktop/YouTube_Icon.svg"
         alt="">
     </div>
-  </div>`)
-}
+  </div>`;
+};
 
 export default footer;

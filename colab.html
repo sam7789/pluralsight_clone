@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicons -->
+
+    <link
+      rel="shortcut icon"
+      href="https://www.pluralsight.com/etc/clientlibs/pluralsight/main/images/favicons/favicon-96x96.png"
+      type="image/x-icon"
+    />
+    <!-- jquery -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/grt-youtube-popup.css" />
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <!-- title -->
+    <title>Pluralsight + VMware</title>
+
+    <!-- linked css -->
+    <link rel="stylesheet" href="./styles/colab.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+  </head>
+
+  <body>
+    <div id="navItems"></div>
+
+    <div id="containernav">
+      <div id="nav"></div>
+
+      <div id="searchBar"></div>
+    </div>
+    <div id="vdo">
+      <video id="videoBG" poster="./images/vdoPic.jpg" autoplay muted loop>
+        <source src="./images/VMware + Pluralsight.mp4" type="video/mp4" />
+      </video>
+      <div id="textDiv">
+        <img width="20%" src="./images/vmware+.png" alt="" />
+        <p>
+          Evolving a 20-year-old company, increasing innovation and accelerating
+          time to delivery requires fresh skills. See how VMware’s globally
+          dispersed teams use Pluralsight to leverage the latest developments in
+          technology as they find new ways to serve customers.
+        </p>
+        <a class="youtube-link" youtubeid="wh91rxCkVXI">
+          <button id="Linkbtn">Watch The Video</button>
+        </a>
+      </div>
+    </div>
+    <div id="pinkDiv">
+      <div id="pinkContent">
+        <h2>Want to increase the speed of innovation at your organization?</h2>
+        <button>learn more</button>
+      </div>
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
+<script type="module" src="./scripts/impexpnavfoot.js"></script>
+<script type="module" src="./scripts/navfunctions.js"></script>
+<script src="./scripts/search.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="./scripts/grt-youtube-popup.js"></script>
+
+<script>
+  $(".youtube-link").grtyoutube({
+    autoPlay: false,
+  });
+</script>
