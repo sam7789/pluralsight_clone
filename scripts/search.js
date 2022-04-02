@@ -30,6 +30,9 @@ async function main(){
         div.setAttribute("id","noncourse");
         div.innerHTML="Sign in First";
         document.getElementById("displaysearch").append(div);
+        document.getElementById("displaysearch").addEventListener("click",function(){
+            window.location.href="signin.html"
+        })
     }
     //displayData(data);
 }
