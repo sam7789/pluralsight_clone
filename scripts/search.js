@@ -37,13 +37,6 @@ async function main(){
     //displayData(data);
 }
 
-
-// else{
-//     let title1 = document.createElement("p");
-//     title1.textContent="Sign in first";
-//     div.append(title1);
-// }
-
 function displayData(data){
     // console.log(data);
     document.getElementById("displaysearch").innerHTML = "";
@@ -77,5 +70,3 @@ function debounce(func, delay){
         func();
     },delay);
 }
-
-
