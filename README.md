@@ -10,7 +10,7 @@ Pluralsight is a technology skills platform that provides access to thousands of
 
 ## Tech Stack
 
-**FrountEnd:** HTML, CSS, JavaScript
+**FrountEnd:** HTML, CSS, JavaScript, Localstorage
 
 **Backend For Creating API:** Node, Express
 
