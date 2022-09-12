@@ -51,7 +51,7 @@ let plan = document.querySelector(".viewPlans");
 plan.addEventListener("click", viewPlans);
 
 function viewPlans() {
-  window.location.href = "plans.html";
+  window.location.href = "/free-try.html";
 }
 
 let tryBtn = document.getElementById("tryForFree");
