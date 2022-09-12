@@ -2,7 +2,7 @@ let navigation = () => {
   return `
     <div><a href="./index.html"><img
               src="https://www.pluralsight.com/etc.clientlibs/pluralsight/clientlibs/clientlib-main/resources/images/global/header/PS_logo.png"
-              alt=""></a>
+              alt="PluralSight logo"></a>
         </div>
         <div>
           <ul>
