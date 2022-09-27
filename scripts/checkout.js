@@ -404,6 +404,8 @@ async function login(user) {
       body: login_data,
       headers: {
         "Content-Type": "application/json",
+        "Access-Control-Allow-origin":"*",
+        "Access-Control-Allow-Credentials":true,
       },
     });
 
