@@ -199,7 +199,7 @@ async function register(user) {
 
     register_data = JSON.stringify(register_data);
 
-    let res = await fetch("https://pluralsightfw15.herokuapp.com/register", {
+    let res = await fetch("https://plural-sight-api.onrender.com/register", {
       method: "POST",
       body: register_data,
       headers: {
@@ -399,7 +399,7 @@ async function login(user) {
 
     login_data = JSON.stringify(login_data);
 
-    let res = await fetch("https://pluralsightfw15.herokuapp.com/login", {
+    let res = await fetch("https://plural-sight-api.onrender.com/login", {
       method: "POST",
       body: login_data,
       headers: {
