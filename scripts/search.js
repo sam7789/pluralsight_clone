@@ -3,7 +3,7 @@ async function search(){
     try {
         let key = document.getElementById("searchInput").value;
 
-        let api = `https://pluralsightfw15.herokuapp.com/course/search/${key}`;
+        let api = `https://plural-sight-api.onrender.com/course/search/${key}`;
 
         let res = await fetch(api);
         let data = await res.json();
